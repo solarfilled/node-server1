@@ -9,6 +9,12 @@ const server = http.createServer((request, response) =>
         // response.write("<html><header></header><body><h1>Hello world</h1></body></html>");
         response.write('{"Message" : "Hello world"}');
         response.end();
+    }  
+    if (request.url == "//krazy")
+    {
+        // response.write("<html><header></header><body><h1>Hello world</h1></body></html>");
+        response.write('{"Message" : "Krazyyyyy"}');
+        response.end();
     }
     else if (request.url == "/sentence")
     {
